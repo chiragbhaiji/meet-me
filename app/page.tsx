@@ -1,101 +1,106 @@
-import Image from "next/image";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import Header from "./components/Header";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+
+const experiences = [
+  {
+    company: {
+      name: "Hashtag Loyalty",
+      url: "https://www.hashtagloyalty.com",
+    },
+    role: "Senior Software Engineer",
+    duration: {
+      start: "2024-02-20",
+    },
+    description:
+      "Build and maintain critical components used to construct Klaviyo’s frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.",
+    skillsUsed: ["React Native", "React", "TypeScript"],
+    appLinks: [
+      { name: "App Store", url: "https://apps.apple.com/app/id1234567890" },
+    ],
+  },
+  {
+    company: {
+      name: "EPAM Systems",
+      url: "https://www.epam.com",
+    },
+    role: "Lead Software Engineer",
+    duration: {
+      start: "2023-07-10",
+      end: "2024-02-20",
+    },
+    description:
+      "Build and maintain critical components used to construct Klaviyo’s frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.",
+    skillsUsed: ["React Native", "React", "TypeScript"],
+    appLinks: [
+      { name: "iOS", url: "https://apps.apple.com/app/id1234567890" },
+      { name: "Android", url: "https://apps.apple.com/app/id1234567890" },
+    ],
+  },
+];
+
+const projects = [
+  {
+    name: "Thrive: Online Food Delivery",
+    imgUrl:
+      "https://cdn.prod.website-files.com/5ec9144206d25c7db40eaa64/65d2e8d13b093288f87469fe_Layer%201.svg",
+    url: "https://about.thrivenow.in",
+    description:
+      "Led development of key features like rewards and rating systems, boosting user engagement by 30%. Improved app performance through custom component development and code optimization, resulting in reduced RAM usage and 20% less technical debt. Enhanced monitoring and debugging capabilities by upgrading Sentry integration, while maintaining high security standards and development best practices.",
+    skillsUsed: [
+      "React Native",
+      "React",
+      "TypeScript",
+      "Swift",
+      "Android Studio",
+      "XCode",
+      "Cursor",
+      "Figma",
+    ],
+    appLinks: [
+      {
+        name: "App Store",
+        url: "https://apps.apple.com/in/app/thrive-online-food-delivery/id1660752275",
+      },
+      {
+        name: "Play Store",
+        url: "https://play.google.com/store/apps/details?id=com.thrivenow&hl=en_IN",
+      },
+    ],
+  },
+];
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="flex flex-col gap-16 p-16 max-w-6xl mx-auto">
+      <Header
+        fullName="Chirag Bhaiji"
+        currentRole="Frontend Engineer"
+        shortBio="Mobile focused frontend engineer with a passion for building delightful user experiences."
+        socialLinks={[
+          {
+            name: "LinkedIn",
+            url: "https://www.linkedin.com/in/chiragbhaiji/",
+            icon: <FaLinkedinIn size={24} />,
+          },
+          {
+            name: "GitHub",
+            url: "https://github.com/chiragbhaiji",
+            icon: <FaGithub size={24} />,
+          },
+        ]}
+      />
+      <About
+        description="I'm an experienced software engineer with 10+ years of experience building mobile applications using React Native and Swift. I believe that a great user experience is critical to the success of any application, and I work hard to ensure that every project I work on is visually appealing, intuitive to use, and meets the needs of its target audience.
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+I have experience managing clients and leading tech teams to build scalable products. I understand the importance of communication and teamwork in software development, so I make sure to create a work environment where everyone feels comfortable sharing ideas and working together. I believe in being honest and responsible, so I make sure everyone is accountable for their work.
+
+I am always eager to learn and grow as a software engineer, and I am committed to delivering high-quality solutions that meet the needs of my clients and users."
+      />
+      <Experience experiences={experiences} />
+      <Projects projects={projects} />
     </div>
   );
 }
