@@ -2,6 +2,7 @@ import SectionBody from "./common/SectionBody";
 import Card from "./common/Card";
 import Tags from "./common/Tags";
 import Section from "./common/Section";
+import AppLinks from "./common/AppLinks";
 
 type ExperienceProps = {
   experiences: Array<{
@@ -29,21 +30,22 @@ export default function Experience({ experiences }: Readonly<ExperienceProps>) {
       {experiences.map((experience) => (
         <Card key={experience.company.name} href={experience.company.url}>
           <div className="w-3/12 mb-2 md:mb-0">
-            <h4 className="text-sm text-gray-500 font-bold leading-8 group-hover/card:text-gray-300">
+            <h4 className="text-xs text-gray-500 font-bold leading-8 group-hover/card:text-gray-300">
               {getDisplayDuration(experience.duration).toUpperCase()}
             </h4>
           </div>
           <div className="w-9/12 flex flex-col gap-4">
             <div className="flex flex-wrap items-center gap-2">
-              <h4 className="text-lg text-gray-500 font-bold group-hover/card:text-gray-300">
+              <h4 className="text-lg font-medium text-gray-500 group-hover/card:text-gray-300">
                 {experience.role}
               </h4>
               <span className="text-gray-600">⁃</span>
-              <h4 className="text-lg text-gray-300 font-bold group-hover/card:text-green-500">
+              <h4 className="text-lg font-medium text-gray-300 group-hover/card:text-green-500">
                 {experience.company.name}
               </h4>
             </div>
             <SectionBody text={experience.description} />
+            {experience.appLinks && <AppLinks appLinks={experience.appLinks} />}
             <Tags titles={experience.skillsUsed} />
           </div>
         </Card>
@@ -71,11 +73,9 @@ const getDisplayDuration = ({
   const endYear = endDate.getFullYear();
   const endMonth = endDate.toLocaleString("default", { month: "short" });
 
-  const isSameYear = startYear === endYear;
-
-  if (!isSameYear) {
-    return `${startMonth} ${startYear} - ${endMonth} ${endYear}`;
+  if (startYear === endYear) {
+    return `${startMonth} - ${endMonth} ${startYear}`;
   }
 
-  return `${startMonth} - ${endMonth} ${startYear}`;
+  return `${startMonth} ${startYear} - ${endMonth} ${endYear}`;
 };

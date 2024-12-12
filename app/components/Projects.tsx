@@ -3,13 +3,13 @@ import Section from "./common/Section";
 import Image from "next/image";
 import Card from "./common/Card";
 import Tags from "./common/Tags";
+import AppLinks from "./common/AppLinks";
 
 type ProjectsProps = {
   projects: Array<{
     name: string;
-    imgUrl: string;
     url: string;
-    role?: string;
+    imgUrl: string;
     description: string;
     skillsUsed: Array<string>;
     appLinks?: Array<{
@@ -34,10 +34,11 @@ export default function Projects({ projects }: Readonly<ProjectsProps>) {
             />
           </div>
           <div className="w-9/12 flex flex-col gap-4">
-            <h4 className="text-lg text-gray-300 font-bold group-hover/card:text-green-500">
+            <h4 className="text-lg text-gray-300 font-medium group-hover/card:text-green-500">
               {project.name}
             </h4>
             <SectionBody text={project.description} />
+            {project.appLinks && <AppLinks appLinks={project.appLinks} />}
             <Tags titles={project.skillsUsed} />
           </div>
         </Card>
