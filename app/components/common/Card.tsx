@@ -6,7 +6,7 @@ type CardProps = {
 };
 
 const className =
-  "group/card flex flex-col md:flex-row bg-gradient-to-br from-green-300/10 via-transparent to-green-300/20 p-6 rounded-lg hover:bg-green-900/20";
+  "group/card flex flex-col md:flex-row bg-gradient-to-br from-gray-500/10 via-transparent to-gray-500/20 p-6 rounded-lg hover:bg-gray-500/20";
 
 export default function Card({ children, href }: Readonly<CardProps>) {
   if (!href) {
