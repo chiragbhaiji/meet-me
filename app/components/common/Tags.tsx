@@ -3,7 +3,9 @@ export default function Tags({ titles }: Readonly<{ titles: string[] }>) {
     <div className="flex flex-wrap gap-2">
       {titles.map((title) => (
         <div key={title} className="bg-white/10 rounded-lg px-3 py-1">
-          <span className="text-md font-medium text-gray-400">{title}</span>
+          <span className="text-md font-medium text-gray-400 group-hover/card:text-gray-100">
+            {title}
+          </span>
         </div>
       ))}
     </div>
