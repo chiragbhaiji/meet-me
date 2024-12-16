@@ -7,7 +7,7 @@ import { data } from "./constants/data";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-16 p-16 max-w-6xl mx-auto">
+    <div className="flex flex-col gap-16 px-6 py-8 max-w-6xl mx-auto sm:p-16">
       <Header
         fullName={data.fullName}
         currentRole={data.currentRole}

@@ -53,7 +53,7 @@ export default function Header({
           className="flex items-center gap-2 text-green-500 font-medium bg-gray-500/20 rounded-lg px-4 py-2 shadow-md hover:shadow-green-500/20"
         >
           <FaDownload size={16} />
-          Download Resume
+          Resume
         </button>
       </div>
     </div>
