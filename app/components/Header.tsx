@@ -1,3 +1,7 @@
+"use client";
+
+import { FaDownload } from "react-icons/fa";
+
 type HeaderProps = {
   fullName: string;
   currentRole: string;
@@ -15,6 +19,13 @@ export default function Header({
   shortBio,
   socialLinks,
 }: Readonly<HeaderProps>) {
+  const handleDownload = () => {
+    window.open(
+      "https://drive.google.com/uc?export=download&id=1gsuFZivORDm-oQQC-OL76kxJ8n9veCbO",
+      "_self"
+    );
+  };
+
   return (
     <div className="flex flex-col gap-2">
       <h1 className="text-6xl font-bold text-gray-200">
@@ -24,17 +35,26 @@ export default function Header({
         {currentRole.toUpperCase()}
       </h3>
       <p className="text-lg text-gray-400">{shortBio}</p>
-      <div className="mt-4 flex gap-4">
-        {socialLinks.map((link) => (
-          <div
-            key={link.name}
-            className="bg-gray-500/20 text-gray-400 rounded-lg p-2 hover:bg-gray-500/60 hover:text-gray-200"
-          >
-            <a href={link.url} target="_blank" rel="noopener noreferrer">
-              {link.icon}
-            </a>
-          </div>
-        ))}
+      <div className="mt-4 flex gap-4 justify-between">
+        <div className="flex gap-2">
+          {socialLinks.map((link) => (
+            <div
+              key={link.name}
+              className="bg-gray-500/20 text-gray-400 rounded-lg p-2 hover:bg-gray-500/60 hover:text-gray-200"
+            >
+              <a href={link.url} target="_blank" rel="noopener noreferrer">
+                {link.icon}
+              </a>
+            </div>
+          ))}
+        </div>
+        <button
+          onClick={handleDownload}
+          className="flex items-center gap-2 text-green-500 font-medium bg-gray-500/20 rounded-lg px-4 py-2 shadow-md hover:shadow-green-500/20"
+        >
+          <FaDownload size={16} />
+          Download Resume
+        </button>
       </div>
     </div>
   );
