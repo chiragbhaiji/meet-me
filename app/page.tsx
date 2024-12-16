@@ -113,31 +113,140 @@ const data = {
   projects: [
     {
       name: "Thrive: Online Food Delivery",
-      imgUrl:
-        "https://cdn.prod.website-files.com/5ec9144206d25c7db40eaa64/65d2e8d13b093288f87469fe_Layer%201.svg",
-      url: "https://about.thrivenow.in",
+      url: "https://thrivenow.in",
       description:
-        "Led development of key features like rewards and rating systems, boosting user engagement by 30%. Improved app performance through custom component development and code optimization, resulting in reduced RAM usage and 20% less technical debt. Enhanced monitoring and debugging capabilities by upgrading Sentry integration, while maintaining high security standards and development best practices.",
+        "Online food discovery and delivery app with social platform for foodies",
+      skillsUsed: [
+        "React Native",
+        "Redux",
+        "TypeScript",
+        "RazorPay",
+        "CleverTap",
+      ],
+    },
+    {
+      name: "Bloom - IQVIA",
+      url: "https://www.iqvia.com",
+      description:
+        "Patient-centric app for remote and incentivized clinical trial participation.",
+      skillsUsed: [
+        "React Native",
+        "Redux",
+        "TypeScript",
+        "CleverTap",
+        "RazorPay",
+        "Mixpanel",
+      ],
+    },
+    {
+      name: "Head On: Stress & Anxiety",
+      url: "https://headon.app",
+      description:
+        "Psychologist-designed app offering instant techniques to manage stress, anxiety, and restore emotional balance",
+      skillsUsed: [
+        "React Native",
+        "JavaScript",
+        "Lottie",
+        "Reanimated",
+        "In-App Purchases",
+      ],
+      appLinks: [
+        {
+          name: "iOS",
+          url: "https://apps.apple.com/gb/app/head-on-stress-anxiety/id6444063799",
+        },
+        {
+          name: "Android",
+          url: "https://play.google.com/store/apps/details?id=com.bammens.mobile.headon",
+        },
+      ],
+    },
+    {
+      name: "Turtle Method",
+      url: "https://app.turtlemethod.com",
+      description:
+        "Personalized health coaching and diet tracking app, focusing on nutrition, fitness, and mindset to help users achieve sustainable lifestyle changes.",
       skillsUsed: [
         "React Native",
         "React",
-        "TypeScript",
+        "JavaScript",
+        "Redux",
+        "Reanimated",
+        "Video & Audio Player",
+        "Fitbit & Apple Health Integration",
+      ],
+      appLinks: [
+        {
+          name: "iOS",
+          url: "https://apps.apple.com/gb/app/health-calorie-coach-turtle/id1570131025",
+        },
+        {
+          name: "Play Store",
+          url: "https://play.google.com/store/apps/details?id=com.trtle&hl=en",
+        },
+      ],
+    },
+    {
+      name: "Neeto Suite",
+      url: "https://neeto.com",
+      description:
+        "SaaS products like neetoInvoice (for invoicing), neetoCal (for meeting scheduling), and neetoDesk (for help desk ticketing).",
+      skillsUsed: [
+        "React Native",
+        "Redux",
+        "ReactJs",
+        "JavaScript",
+        "Storybook",
+        "ReactQuery",
+        "Fastlane",
+      ],
+    },
+    {
+      name: "PumaPay: DeFi Payment Wallet",
+      url: "https://pumapay.com",
+      description:
+        "A DeFi Payment wallet to facilitate peer-to-peer transactions via advanced billing models.",
+      skillsUsed: [
         "Swift",
-        "Android Studio",
-        "XCode",
-        "Cursor",
-        "Figma",
+        "iOS",
+        "ReactJs",
+        "JavaScript",
+        "Blockchain",
+        "DeFi",
+        "web3.js",
+      ],
+    },
+    {
+      name: "Patientory",
+      url: "https://patientory.com",
+      description:
+        "Decentralized mobile app for secure health information storage using blockchain.",
+      skillsUsed: [
+        "Swift",
+        "iOS",
+        "ReactJs",
+        "JavaScript",
+        "Blockchain",
+        "web3.js",
+        "IPFS",
       ],
       appLinks: [
         {
           name: "App Store",
-          url: "https://apps.apple.com/in/app/thrive-online-food-delivery/id1660752275",
+          url: "https://apps.apple.com/us/app/patientory/id1583534430",
         },
         {
           name: "Play Store",
-          url: "https://play.google.com/store/apps/details?id=com.thrivenow&hl=en_IN",
+          url: "https://play.google.com/store/apps/details?id=com.patientory.app",
         },
       ],
+    },
+    {
+      name: "Red Hat Partner Connect",
+      url: "",
+      description:
+        "Tinder-like app for finding RedHat business partners for contract-based collaboration.",
+      skillsUsed: ["iOS", "Swift", "Socket.io", "OOP", "TDD"],
     },
   ],
 };

@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${notoSans.variable} antialiased bg-gradient-to-tl from-black to-gray-700`}
+        className={`${notoSans.variable} antialiased bg-gradient-to-tl from-black to-gray-800`}
       >
         {children}
       </body>
