@@ -2,7 +2,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
-
+import Footer from "./components/Footer";
 import { data } from "./constants/data";
 
 export default function Home() {
@@ -17,6 +17,7 @@ export default function Home() {
       <About description={data.description} />
       <Experience experiences={data.experiences} />
       <Projects projects={data.projects} />
+      <Footer />
     </div>
   );
 }
