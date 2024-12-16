@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 type HeaderProps = {
   fullName: string;
   currentRole: string;
@@ -32,9 +30,9 @@ export default function Header({
             key={link.name}
             className="bg-gray-500/20 text-gray-400 rounded-lg p-2 hover:bg-gray-500/60 hover:text-gray-200"
           >
-            <Link href={link.url} target="_blank">
+            <a href={link.url} target="_blank" rel="noopener noreferrer">
               {link.icon}
-            </Link>
+            </a>
           </div>
         ))}
       </div>

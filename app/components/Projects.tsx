@@ -1,6 +1,5 @@
 import SectionBody from "./common/SectionBody";
 import Section from "./common/Section";
-import Image from "next/image";
 import Card from "./common/Card";
 import Tags from "./common/Tags";
 import AppLinks from "./common/AppLinks";
