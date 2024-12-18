@@ -11,6 +11,7 @@ type HeaderProps = {
     url: string;
     icon: React.ReactNode;
   }>;
+  resumeUrl: string;
 };
 
 export default function Header({
@@ -18,12 +19,10 @@ export default function Header({
   currentRole,
   shortBio,
   socialLinks,
+  resumeUrl,
 }: Readonly<HeaderProps>) {
   const handleDownload = () => {
-    window.open(
-      "https://drive.google.com/uc?export=download&id=1gsuFZivORDm-oQQC-OL76kxJ8n9veCbO",
-      "_self"
-    );
+    window.open(resumeUrl, "_self");
   };
 
   return (

@@ -2,9 +2,10 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 export const data = {
   fullName: "Chirag Bhaiji",
-  currentRole: "Senior Software Engineer",
-  shortBio:
-    "Experienced React Native Developer crafting scalable mobile & web applications with a passion for innovation & impact.",
+  currentRole: "Software Engineer",
+  shortBio: "Crafting web and mobile experiences from your brightest ideas.",
+  resumeUrl:
+    "https://drive.google.com/uc?export=download&id=1gsuFZivORDm-oQQC-OL76kxJ8n9veCbO",
   socialLinks: [
     {
       name: "LinkedIn",
@@ -17,9 +18,9 @@ export const data = {
       icon: <FaGithub size={24} />,
     },
   ],
-  description: `I'm an experienced software engineer with 10+ years of experience building mobile applications using React Native and Swift. I believe that a great user experience is critical to the success of any application, and I work hard to ensure that every project I work on is visually appealing, intuitive to use, and meets the needs of its target audience.
-            I have experience managing clients and leading tech teams to build scalable products. I understand the importance of communication and teamwork in software development, so I make sure to create a work environment where everyone feels comfortable sharing ideas and working together. I believe in being honest and responsible, so I make sure everyone is accountable for their work.
-            I am always eager to learn and grow as a software engineer, and I am committed to delivering high-quality solutions that meet the needs of my clients and users.`,
+  description: `I’m a developer passionate about creating seamless, user-friendly applications that combine thoughtful design with robust engineering. I specialize in mobile development, building cross-platform apps with React Native and native iOS applications using Swift. I also have experience working with React for web app development, enabling me to deliver end-to-end solutions across platforms.
+With over a decade of experience, I’ve worked across diverse environments—from start-ups to established organizations—leading teams, architecting scalable solutions, and managing clients to ensure their requirements are understood and delivered effectively. My ability to bridge the gap between technical and business needs has been key to delivering impactful, high-performance applications.
+Outside of work, I enjoy listening to music, watching comedy shows, and traveling, drawing inspiration from new experiences and cultures to bring fresh perspectives to my work.`,
   experiences: [
     {
       company: {

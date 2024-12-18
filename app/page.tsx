@@ -13,6 +13,7 @@ export default function Home() {
         currentRole={data.currentRole}
         shortBio={data.shortBio}
         socialLinks={data.socialLinks}
+        resumeUrl={data.resumeUrl}
       />
       <About description={data.description} />
       <Experience experiences={data.experiences} />
