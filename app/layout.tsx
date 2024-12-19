@@ -10,7 +10,7 @@ const notoSans = Noto_Sans({
 });
 
 export const metadata: Metadata = {
-  title: data.fullName,
+  title: `Hi, I'm ${data.fullName}`,
   description: data.currentRole,
 };
 
