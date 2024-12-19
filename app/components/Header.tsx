@@ -1,5 +1,7 @@
 "use client";
 
+import SectionBody from "./common/SectionBody";
+
 type HeaderProps = {
   fullName: string;
   currentRole: string;
@@ -12,16 +14,14 @@ export default function Header({
   shortBio,
 }: Readonly<HeaderProps>) {
   return (
-    <div className="flex flex-col gap-2">
-      <div>
-        <h1 className="text-6xl font-bold text-gray-200 tracking-widest">
-          {fullName.toUpperCase()}
-        </h1>
-        <h3 className="text-2xl font-semibold text-gray-300 tracking-widest">
-          {currentRole.toUpperCase()}
-        </h3>
-        <p className="text-lg text-gray-400">{shortBio}</p>
-      </div>
+    <div className="flex flex-col gap-1">
+      <h1 className="uppercase text-6xl font-bold text-gray-200 tracking-widest">
+        {fullName}
+      </h1>
+      <h3 className="uppercase text-2xl font-semibold text-gray-300 tracking-widest">
+        {currentRole}
+      </h3>
+      <SectionBody text={shortBio} />
     </div>
   );
 }

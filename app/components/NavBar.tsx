@@ -1,7 +1,7 @@
 "use client";
 
 import { FaDownload } from "react-icons/fa";
-
+import React from "react";
 type NavBarProps = {
   socialLinks: Array<{
     name: string;
@@ -21,7 +21,7 @@ export default function NavBar({
 
   return (
     <div className="sticky top-0 z-50 backdrop-blur-3xl py-4 transition-all duration-200">
-      <div className="flex px-6 gap-4 justify-between max-w-6xl mx-auto">
+      <div className="flex px-6 gap-4 justify-between items-center max-w-6xl mx-auto">
         <div className="flex gap-2">
           {socialLinks.map((link) => (
             <div
