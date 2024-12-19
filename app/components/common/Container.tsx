@@ -3,5 +3,5 @@ type ContainerProps = {
 };
 
 export default function Container({ children }: Readonly<ContainerProps>) {
-  return <div className="flex flex-col gap-6">{children}</div>;
+  return <div className="flex flex-col gap-4 md:gap-6">{children}</div>;
 }

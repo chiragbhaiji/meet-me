@@ -20,13 +20,13 @@ export default function NavBar({
   };
 
   return (
-    <div className="sticky top-0 z-50 backdrop-blur-3xl py-4 transition-all duration-200">
-      <div className="flex px-6 gap-4 justify-between items-center max-w-6xl mx-auto">
+    <div className="top-0 z-50 sticky backdrop-blur-3xl py-4 transition-all duration-200">
+      <div className="flex justify-between items-center gap-4 mx-auto px-6 max-w-6xl">
         <div className="flex gap-2">
           {socialLinks.map((link) => (
             <div
               key={link.name}
-              className="bg-gray-500/20 text-gray-400 rounded-lg p-2 hover:bg-gray-500/60 hover:text-gray-200"
+              className="bg-gray-500/20 hover:bg-gray-500/60 p-2 rounded-lg text-gray-400 hover:text-gray-200"
             >
               <a href={link.url} target="_blank" rel="noopener noreferrer">
                 {link.icon}
@@ -36,7 +36,7 @@ export default function NavBar({
         </div>
         <button
           onClick={handleDownload}
-          className="flex items-center gap-2 text-green-500 font-medium bg-gray-500/20 rounded-lg px-4 py-2 shadow-md hover:shadow-green-500/20"
+          className="flex items-center gap-2 bg-gray-500/20 shadow-md hover:shadow-green-500/20 px-4 py-2 rounded-lg font-medium text-green-500"
         >
           <FaDownload size={16} />
           Resume

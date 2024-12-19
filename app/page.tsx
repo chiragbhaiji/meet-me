@@ -9,7 +9,7 @@ import NavBar from "./components/NavBar";
 export default function Home() {
   return (
     <div className="py-8 sm:py-16">
-      <div className="px-6 max-w-6xl mx-auto flex flex-col gap-16">
+      <div className="mx-auto px-6 max-w-6xl">
         <Header
           fullName={data.fullName}
           currentRole={data.currentRole}
@@ -17,7 +17,7 @@ export default function Home() {
         />
       </div>
       <NavBar socialLinks={data.socialLinks} resumeUrl={data.resumeUrl} />
-      <div className="mt-16 px-6 max-w-6xl mx-auto flex flex-col gap-16">
+      <div className="flex flex-col gap-8 md:gap-16 mx-auto mt-8 md:mt-16 px-6 max-w-6xl">
         <About description={data.description} />
         <Experience experiences={data.experiences} />
         <Projects projects={data.projects} />

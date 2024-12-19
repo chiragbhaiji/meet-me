@@ -29,18 +29,18 @@ export default function Experience({ experiences }: Readonly<ExperienceProps>) {
     <Section title="Experience">
       {experiences.map((experience) => (
         <Card key={experience.company.name} href={experience.company.url}>
-          <div className="w-full mb-2 md:mb-0 md:w-3/12">
-            <h4 className="text-sm text-gray-500 font-bold leading-8 group-hover/card:text-gray-300">
+          <div className="mb-0 md:mb-0 w-full md:w-3/12">
+            <h4 className="group-hover/card:text-gray-300 font-bold text-gray-500 text-xs md:text-sm leading-8">
               {getDisplayDuration(experience.duration).toUpperCase()}
             </h4>
           </div>
-          <div className="w-full md:w-9/12 flex flex-col gap-4">
-            <div className="flex flex-wrap items-center gap-2">
-              <h4 className="text-lg font-medium text-gray-500 group-hover/card:text-gray-300">
+          <div className="flex flex-col gap-1.5 md:gap-4 md:w-9/12">
+            <div className="flex flex-wrap items-center gap-1 md:gap-2">
+              <h4 className="group-hover/card:text-gray-300 font-medium text-gray-500 text-lg">
                 {experience.role}
               </h4>
               <span className="text-gray-600">⁃</span>
-              <h4 className="text-lg font-medium text-gray-300 group-hover/card:text-green-500">
+              <h4 className="group-hover/card:text-green-500 font-medium text-gray-300 text-lg">
                 {experience.company.name}
               </h4>
             </div>
