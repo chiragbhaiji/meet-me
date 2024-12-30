@@ -103,7 +103,7 @@ Outside of work, I enjoy listening to music, watching comedy shows, and travelin
         end: "2017-03-22",
       },
       description:
-        "Developed and maintained native iOS mobile applications for different clients. Built features like real-time chat and handle dynamic utilizing OOP concepts. Collaborated closely with clients and business analysts to translate requirements into functional, scalable solutions, ensuring a seamless user experience across various platforms.",
+        "Developed and maintained native iOS mobile applications for different clients. Built features like real-time chat and handled dynamic forms using OOP concepts. Collaborated closely with clients and business analysts to translate requirements into functional, scalable solutions, ensuring a seamless user experience across various platforms.",
       skillsUsed: ["iOS", "Swift", "Objective-C"],
     },
   ],
