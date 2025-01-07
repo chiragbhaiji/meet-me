@@ -5,7 +5,7 @@ export const data = {
   currentRole: "Software Engineer",
   shortBio: "Crafting web and mobile experiences from your brightest ideas.",
   resumeUrl:
-    "https://drive.google.com/uc?export=download&id=1gsuFZivORDm-oQQC-OL76kxJ8n9veCbO",
+    "https://drive.google.com/uc?export=download&id=1MjR2gp9EwkCEJip7WLZGWseZK79UZPzt",
   socialLinks: [
     {
       name: "LinkedIn",
