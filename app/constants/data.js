@@ -5,7 +5,7 @@ export const data = {
   currentRole: "Software Engineer",
   shortBio: "Crafting web and mobile experiences from your brightest ideas.",
   resumeUrl:
-    "https://drive.google.com/uc?export=download&id=1MjR2gp9EwkCEJip7WLZGWseZK79UZPzt",
+    "https://drive.google.com/uc?export=download&id=1Gob-wMfHDUPQ_AhXR-Tbnvp473HdJslH",
   socialLinks: [
     {
       name: "LinkedIn",
@@ -22,6 +22,25 @@ export const data = {
 With over a decade of experience, I’ve worked across diverse environments—from start-ups to established organizations—leading teams, architecting scalable solutions, and managing clients to ensure their requirements are understood and delivered effectively. My ability to bridge the gap between technical and business needs has been key to delivering impactful, high-performance applications.
 Outside of work, I enjoy listening to music, watching comedy shows, and traveling, drawing inspiration from new experiences and cultures to bring fresh perspectives to my work.`,
   experiences: [
+    {
+      company: {
+        name: "PwC Acceleration Center",
+        url: "https://jobs-ta.pwc.com/global/en/ACs-in-India-Career-Site",
+      },
+      role: "Manager (React Native)",
+      duration: {
+        start: "2025-04-02",
+      },
+      description:
+        "Manage and develop the new features for Savvy (legacy), a mobile app for PepsiCo employees to manage their end to end operations from merchandising to ordering.",
+      skillsUsed: [
+        "React Native",
+        "React",
+        "JavaScript",
+        "TypeScript",
+        "SalesforceSDK",
+      ],
+    },
     {
       company: {
         name: "Thrive Now",
