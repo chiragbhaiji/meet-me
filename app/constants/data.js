@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 export const data = {
   fullName: "Chirag Bhaiji",
   currentRole: "Software Engineer",
-  shortBio: "Crafting web and mobile experiences from your brightest ideas.",
+  shortBio: "Crafting mobile and web experiences from your brightest ideas.",
   resumeUrl:
     "https://drive.google.com/uc?export=download&id=1Gob-wMfHDUPQ_AhXR-Tbnvp473HdJslH",
   socialLinks: [
