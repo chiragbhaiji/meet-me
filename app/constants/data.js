@@ -5,7 +5,7 @@ export const data = {
   currentRole: "Software Engineer",
   shortBio: "Crafting mobile and web experiences from your brightest ideas.",
   resumeUrl:
-    "https://drive.google.com/uc?export=download&id=1Gob-wMfHDUPQ_AhXR-Tbnvp473HdJslH",
+    "https://drive.google.com/uc?export=download&id=1UbgcC-YqOp-SyKXIg4Aamrvug1CckjTk",
   socialLinks: [
     {
       name: "LinkedIn",
@@ -43,7 +43,7 @@ Outside of work, I enjoy listening to music, watching comedy shows, and travelin
     },
     {
       company: {
-        name: "Thrive Now",
+        name: "Thrive Now  (Hashtag Loyalty)",
         url: "https://thrivenow.in",
       },
       role: "Senior React Native Developer",
