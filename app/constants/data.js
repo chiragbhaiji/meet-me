@@ -279,7 +279,7 @@ export const data = {
       url: "https://neeto.com",
       description: [
         "SaaS productivity apps: neetoInvoice (invoicing), neetoCal (meeting scheduling), and neetoDesk (help desk ticketing).",
-        "Built 3 of 6 apps from scratch as sole React Native developer.",
+        "Participated in building 3 of 6 apps from scratch",
         "Automated iOS and Android release pipelines via Fastlane, removing all manual distribution steps, and ran competitive analysis that directly shaped the product roadmap.",
       ],
       skillsUsed: [
