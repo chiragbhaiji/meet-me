@@ -20,7 +20,7 @@ type ProjectsProps = {
 
 export default function Projects({ projects }: Readonly<ProjectsProps>) {
   return (
-    <Section title="Projects">
+    <Section title="Projects" id="projects">
       {projects.map((project) => (
         <Card key={project.name} href={project.url}>
           <div className="flex flex-col gap-1.5 md:gap-4 md:w-9/12">

@@ -7,7 +7,7 @@ type AboutProps = {
 
 export default function About({ description }: Readonly<AboutProps>) {
   return (
-    <Section title="About">
+    <Section title="About" id="about">
       <SectionBody text={description} />
     </Section>
   );

@@ -26,7 +26,7 @@ type ExperienceProps = {
 
 export default function Experience({ experiences }: Readonly<ExperienceProps>) {
   return (
-    <Section title="Experience">
+    <Section title="Experience" id="experience">
       {experiences.map((experience) => (
         <Card key={experience.company.name} href={experience.company.url}>
           <div className="mb-0 md:mb-0 w-full md:w-3/12">
