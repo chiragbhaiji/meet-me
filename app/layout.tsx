@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 import { data } from "./constants/data";
+import ThemeProvider from "./components/ThemeProvider";
 
 const notoSans = Noto_Sans({
   subsets: ["latin"],
@@ -20,11 +21,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var t=localStorage.getItem('theme')||'dark';document.documentElement.classList.toggle('dark',t==='dark');})();`,
+          }}
+        />
+      </head>
       <body
-        className={`${notoSans.variable} antialiased bg-gradient-to-tl from-black to-gray-800`}
+        className={`${notoSans.variable} antialiased bg-gray-50 dark:bg-gradient-to-tl dark:from-black dark:to-gray-800 min-h-screen`}
       >
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

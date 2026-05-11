@@ -1,14 +1,19 @@
 import Section from "./common/Section";
-import SectionBody from "./common/SectionBody";
 
 type AboutProps = {
-  description: string;
+  description: string[];
 };
 
 export default function About({ description }: Readonly<AboutProps>) {
   return (
     <Section title="About" id="about">
-      <SectionBody text={description} />
+      <div className="flex flex-col gap-4">
+        {description.map((para, i) => (
+          <p key={i} className="text-md md:text-lg text-gray-700 dark:text-gray-300">
+            {para}
+          </p>
+        ))}
+      </div>
     </Section>
   );
 }

@@ -9,7 +9,7 @@ type ProjectsProps = {
     name: string;
     url: string;
     imgUrl?: string;
-    description: string;
+    description: string[];
     skillsUsed: Array<string>;
     appLinks?: Array<{
       name: string;
@@ -24,7 +24,7 @@ export default function Projects({ projects }: Readonly<ProjectsProps>) {
       {projects.map((project) => (
         <Card key={project.name} href={project.url}>
           <div className="flex flex-col gap-1.5 md:gap-4 md:w-9/12">
-            <h4 className="group-hover/card:text-green-500 font-medium text-gray-300 text-lg">
+            <h4 className="group-hover/card:text-green-600 dark:group-hover/card:text-green-400 font-semibold text-gray-800 dark:text-gray-200 text-lg">
               {project.name}
             </h4>
             <SectionBody text={project.description} />

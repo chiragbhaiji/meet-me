@@ -19,7 +19,7 @@ export default function AppLinks({ appLinks }: Readonly<AppLinksProps>) {
 }
 
 const AppLinkItem = ({ name, url }: { name: string; url: string }) => (
-  <div className="flex items-center gap-2 text-gray-300 hover:text-green-500">
+  <div className="flex items-center gap-2 text-gray-500 hover:text-green-500">
     <FaLink size={10} />
     <a
       href={url}
