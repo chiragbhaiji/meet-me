@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 export const data = {
   fullName: "Chirag Bhaiji",
-  currentRole: "Software Engineer",
+  currentRole: "Senior Software Engineer",
   shortBio: "Crafting mobile and web experiences from your brightest ideas.",
   resumeUrl:
     "https://drive.google.com/uc?export=download&id=1UbgcC-YqOp-SyKXIg4Aamrvug1CckjTk",
@@ -30,20 +30,23 @@ Outside of work, I enjoy listening to music, watching comedy shows, and travelin
       role: "Manager (React Native)",
       duration: {
         start: "2025-04-02",
+        end: "2026-02-22",
       },
       description:
-        "Manage and develop the new features for Savvy (legacy), a mobile app for PepsiCo employees to manage their end to end operations from merchandising to ordering.",
+        "Led the React Native team on Savvy, an enterprise field-operations app for PepsiCo employees covering end-to-end merchandising and ordering. Shipped 5 features within a cross-functional delivery structure while bridging offshore teams, PwC leadership, and PepsiCo stakeholders. Resolved 10+ critical production issues to stabilize the app and clear the defect backlog. Standardized AI-assisted code review across the team using a reusable prompt library, making AI the first pass on every PR. Cut new developer ramp-up time from 2+ weeks to ~1 week by writing comprehensive onboarding docs and developer guides.",
       skillsUsed: [
         "React Native",
-        "React",
-        "JavaScript",
         "TypeScript",
+        "Redux Toolkit",
         "SalesforceSDK",
+        "AppDynamics",
+        "Fastlane",
+        "GitHub Actions",
       ],
     },
     {
       company: {
-        name: "Thrive Now  (Hashtag Loyalty)",
+        name: "Thrive Now (Hashtag Loyalty)",
         url: "https://thrivenow.in",
       },
       role: "Senior React Native Developer",
@@ -52,22 +55,38 @@ Outside of work, I enjoy listening to music, watching comedy shows, and travelin
         end: "2024-12-13",
       },
       description:
-        "Built and maintained critical features for the consumer mobile application, ensuring scalability and performance. Collaborated closely with cross-functional teams, including developers, designers, and stakeholders, to deliver user-centric solutions and drive best practices in mobile application development",
-      skillsUsed: ["React Native", "React", "JavaScript", "TypeScript"],
+        "Built Rewards, Customer Feedback, and Personalized Ratings features end-to-end for the Thrive food discovery app, driving a 30% increase in user engagement. Replaced a third-party Carousel with a custom Reanimated component, cutting RAM usage by 40–50% and improving scroll performance. Led a codebase-wide refactor that reduced technical debt by 20%, improving maintainability and code review speed. Integrated Sentry for performance monitoring and uploaded debug symbols, reducing stack trace resolution time from days to hours. Used AI tools (Cursor, GitHub Copilot, Claude) daily to cut root cause identification time in production issues by 50–60%.",
+      skillsUsed: [
+        "React Native",
+        "TypeScript",
+        "Redux Toolkit",
+        "React Query",
+        "Reanimated",
+        "Sentry",
+        "Firebase",
+      ],
     },
     {
       company: {
-        name: "EPAM",
+        name: "EPAM Systems",
         url: "https://www.epam.com",
       },
-      role: "Lead Software Engineer",
+      role: "Lead Software Developer",
       duration: {
         start: "2023-07-10",
         end: "2024-02-20",
       },
       description:
-        "Led and mentored junior developers, ensuring their growth and alignment with project goals. Collaborated with the mobile team to share innovative ideas, drive technical advancements, and maintain synchronization with evolving technologies.",
-      skillsUsed: ["React Native", "React", "JavaScript", "TypeScript"],
+        "Delivered the Surveys module—the most business-critical feature of Bloom, a patient-centric app for remote clinical trial participation—end-to-end within 5 days of joining, directly unblocking a stalled release milestone. Diagnosed broken deep link flows for email verification and password reset, then built a generalized integration pattern that scales to all future features. Built the Rewards feature and refactored a fragmented healthcare provider form into a single composable component supporting 4 distinct usage scenarios.",
+      skillsUsed: [
+        "React Native",
+        "TypeScript",
+        "Redux Toolkit",
+        "React Query",
+        "Firebase",
+        "Deep Linking",
+        "REST API",
+      ],
     },
     {
       company: {
@@ -80,35 +99,42 @@ Outside of work, I enjoy listening to music, watching comedy shows, and travelin
         end: "2023-07-07",
       },
       description:
-        "Served as the sole React Native developer, taking full ownership of the development lifecycle—from gathering requirements to delivering tested features. I also contributed to internal Neeto products and shared my insights through technical blogs, fostering a culture of learning and knowledge sharing within the team.",
+        "Sole React Native developer across three products. On Head On, built the In-App Purchases flow and push notification system enabling monetization and re-engagement. On Turtle Method, automated 90% of manual coach workflows—scheduling, tracking, and reporting—and integrated Apple Health, Fitbit, and Garmin APIs for real-time biometric syncing, eliminating manual data entry. Built 3 of 6 Neeto suite apps from scratch and automated iOS/Android release pipelines via Fastlane, removing manual distribution steps entirely.",
       skillsUsed: [
         "React Native",
-        "JavaScript",
         "TypeScript",
-        "Redux",
-        "ReactQuery",
+        "Redux Toolkit",
+        "React Query",
         "Reanimated",
+        "Lottie",
+        "Apple IAP",
+        "Apple Health",
+        "Fastlane",
+        "Firebase",
+        "Storybook",
       ],
     },
     {
       company: {
-        name: "Deqode",
+        name: "Deqode Solutions",
         url: "https://www.deqode.com",
       },
-      role: "Tech Lead | Senior Solution Engineer",
+      role: "Team Lead | Senior Solution Engineer",
       duration: {
         start: "2017-04-17",
         end: "2021-05-26",
       },
       description:
-        "Led the development of a hybrid app from scratch in Swift, boosting speed and scalability. Managed a team of 15, ensuring smooth project delivery and client satisfaction while driving technical innovations.",
+        "Joined as sole founding engineer on PumaPay, a DeFi payment protocol; shipped the first production version, then grew and led the engineering team from 0 to 15 engineers. Rebuilt the legacy hybrid app from scratch in native Swift and architected it as a white-label platform delivering full per-client customization within a one-month window. For Patientory, designed and built a Swift SDK for Hyperledger blockchain interaction from scratch, and integrated IPFS for distributed health record storage, removing the single point of failure of centralized file hosting.",
       skillsUsed: [
         "iOS App Development",
         "Swift",
-        "JavaScript",
         "React Native",
-        "React",
+        "JavaScript",
         "Blockchain",
+        "Web3.js",
+        "Hyperledger",
+        "IPFS",
       ],
     },
     {
@@ -122,8 +148,8 @@ Outside of work, I enjoy listening to music, watching comedy shows, and travelin
         end: "2017-03-22",
       },
       description:
-        "Developed and maintained native iOS mobile applications for different clients. Built features like real-time chat and handled dynamic forms using OOP concepts. Collaborated closely with clients and business analysts to translate requirements into functional, scalable solutions, ensuring a seamless user experience across various platforms.",
-      skillsUsed: ["iOS", "Swift", "Objective-C"],
+        "Developed and maintained native iOS applications for enterprise clients including Red Hat Partner Connect, a B2B matchmaking app for contract-based partnerships. Built a real-time partner chat feature using Socket.io, and refactored a screen with 20+ dynamic form fields using OOP patterns, reducing complexity and maintenance overhead. Partnered with business analysts and clients to translate ambiguous requirements into scoped technical solutions, reducing rework from unclear specs.",
+      skillsUsed: ["iOS", "Swift", "Objective-C", "Socket.io", "OOP", "TDD"],
     },
   ],
   projects: [
@@ -131,40 +157,51 @@ Outside of work, I enjoy listening to music, watching comedy shows, and travelin
       name: "Thrive: Online Food Delivery",
       url: "https://thrivenow.in",
       description:
-        "Online food discovery and delivery app with social platform for foodies",
+        "Food discovery and ordering app with a social platform for foodies. Built Rewards, Customer Feedback, and Personalized Ratings end-to-end, driving a 30% increase in user engagement. Replaced a third-party Carousel with a custom Reanimated component, cutting RAM usage by 40–50% and improving scroll performance.",
       skillsUsed: [
         "React Native",
-        "Redux",
         "TypeScript",
+        "Redux Toolkit",
+        "React Query",
+        "Reanimated",
+        "Sentry",
+        "Firebase",
         "RazorPay",
         "CleverTap",
+        "Mixpanel",
+        "Growthbook",
+        "User Experior",
       ],
     },
     {
       name: "Bloom - IQVIA",
       url: "https://www.iqvia.com",
       description:
-        "Patient-centric app for remote and incentivized clinical trial participation.",
+        "Patient-centric app for remote and incentivized clinical trial participation. Delivered the Surveys module—the most business-critical feature—end-to-end within 5 days of joining, directly unblocking a stalled release milestone. Built a generalized deep link integration pattern for email verification and password reset that scales to all future features.",
       skillsUsed: [
         "React Native",
-        "Redux",
         "TypeScript",
-        "CleverTap",
-        "RazorPay",
-        "Mixpanel",
+        "Redux Toolkit",
+        "React Query",
+        "Firebase",
+        "Deep Linking",
+        "REST API",
       ],
     },
     {
       name: "Head On: Stress & Anxiety",
       url: "https://headon.app",
       description:
-        "Psychologist-designed app offering instant techniques to manage stress, anxiety, and restore emotional balance",
+        "Psychologist-designed app for managing stress, anxiety, and emotional balance. Built the In-App Purchases flow and push notification system enabling monetization and daily re-engagement. Developed a reusable library of animated custom UI components with Reanimated and Lottie, powering micro-interactions across all core screens.",
       skillsUsed: [
         "React Native",
-        "JavaScript",
-        "Lottie",
+        "TypeScript",
         "Reanimated",
-        "In-App Purchases",
+        "Lottie",
+        "Apple IAP",
+        "Firebase",
+        "Push Notifications",
+        "Context API",
       ],
       appLinks: [
         {
@@ -181,15 +218,17 @@ Outside of work, I enjoy listening to music, watching comedy shows, and travelin
       name: "Turtle Method",
       url: "https://app.turtlemethod.com",
       description:
-        "Personalized health coaching and diet tracking app, focusing on nutrition, fitness, and mindset to help users achieve sustainable lifestyle changes.",
+        "Personalized health coaching and diet tracking app for fat loss and fitness. Automated 90% of manual coach workflows—scheduling, tracking, and reporting—increasing client capacity per coach. Integrated Apple Health, Fitbit, and Garmin APIs for automatic biometric syncing, eliminating manual data entry and enabling real-time progress tracking for coaches.",
       skillsUsed: [
         "React Native",
-        "React",
-        "JavaScript",
+        "TypeScript",
         "Redux",
         "Reanimated",
+        "Apple Health",
+        "Fitbit API",
+        "Garmin API",
+        "Firebase",
         "Video & Audio Player",
-        "Fitbit & Apple Health Integration",
       ],
       appLinks: [
         {
@@ -206,45 +245,46 @@ Outside of work, I enjoy listening to music, watching comedy shows, and travelin
       name: "Neeto Suite",
       url: "https://neeto.com",
       description:
-        "SaaS products like neetoInvoice (for invoicing), neetoCal (for meeting scheduling), and neetoDesk (for help desk ticketing).",
+        "SaaS productivity apps — neetoInvoice (invoicing), neetoCal (meeting scheduling), and neetoDesk (help desk ticketing). Built 3 of 6 apps from scratch as sole React Native developer. Automated iOS and Android release pipelines via Fastlane, removing all manual distribution steps, and ran competitive analysis that directly shaped the product roadmap.",
       skillsUsed: [
         "React Native",
-        "Redux",
-        "ReactJs",
-        "JavaScript",
-        "Storybook",
-        "ReactQuery",
+        "TypeScript",
+        "Redux Toolkit",
+        "React Query",
         "Fastlane",
+        "Storybook",
+        "Reanimated",
+        "React hook-form",
       ],
     },
     {
       name: "PumaPay: DeFi Payment Wallet",
       url: "https://pumapay.com",
       description:
-        "A DeFi Payment wallet to facilitate peer-to-peer transactions via advanced billing models.",
+        "DeFi payment protocol for peer-to-peer transactions via advanced billing models. Joined as sole founding engineer, shipped the first production version, then grew the engineering team from 0 to 15. Architected the app as a white-label platform delivering full per-client customization within a one-month window, and wrote a script to automate per-client theme and feature generation.",
       skillsUsed: [
         "Swift",
         "iOS",
         "ReactJs",
-        "JavaScript",
         "Blockchain",
-        "DeFi",
-        "web3.js",
+        "Web3.js",
+        "White-Label Architecture",
+        "REST API",
+        "JSON RPC",
       ],
     },
     {
       name: "Patientory",
       url: "https://patientory.com",
       description:
-        "Decentralized mobile app for secure health information storage using blockchain.",
+        "Decentralized mobile app for secure health information storage using blockchain. Designed and built a Swift SDK for Hyperledger blockchain interaction from scratch, forming the core integration layer between the app and the network. Integrated IPFS for distributed health record storage, eliminating the single point of failure of centralized file hosting.",
       skillsUsed: [
         "Swift",
         "iOS",
-        "ReactJs",
-        "JavaScript",
+        "Hyperledger",
         "Blockchain",
-        "web3.js",
         "IPFS",
+        "REST API",
       ],
       appLinks: [
         {
@@ -261,8 +301,8 @@ Outside of work, I enjoy listening to music, watching comedy shows, and travelin
       name: "Red Hat Partner Connect",
       url: "",
       description:
-        "Tinder-like app for finding RedHat business partners for contract-based collaboration.",
-      skillsUsed: ["iOS", "Swift", "Socket.io", "OOP", "TDD"],
+        "B2B matchmaking app for finding Red Hat business partners for contract-based collaboration. Built a real-time partner chat feature using Socket.io, and refactored a screen with 20+ dynamic form fields using OOP patterns, reducing complexity and maintenance overhead. Partnered with business analysts and clients to translate ambiguous requirements into scoped technical solutions.",
+      skillsUsed: ["Swift", "Socket.io", "OOP", "TDD"],
     },
   ],
 };

@@ -1,0 +1,202 @@
+\documentclass[10pt, letterpaper]{article}
+
+% ATS-SAFE: Use Helvetica (Arial equivalent) — zero ligature/encoding issues
+\usepackage{fontenc}
+\usepackage{pifont}
+
+\usepackage[margin=0.4in, top=0.4in, bottom=0.4in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+
+% Kill all paragraph spacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% ── COMMANDS ──────────────────────────────────────────────────────────────────
+
+% Section header: small-caps effect via \textbf + \large, ruled underneath
+\newcommand{\ressection}[1]{%
+  \vspace{16pt}%
+  {\large\textbf{#1}}%
+  \vspace{0pt}\newline%
+  \rule{\linewidth}{0.4pt}%
+  \vspace{0pt}%
+}
+
+% Company name (left) + location (right) — single paragraph, no table
+\newcommand{\rescompany}[2]{%
+  \vspace{5pt}%
+  {\textbf{#1}\hfill\textbf{#2}}\par%
+}
+
+% Role (left, italic) + dates (right) — single paragraph, no table
+\newcommand{\resrole}[2]{%
+  {\textit{#1}\hfill #2}\par\vspace{2pt}%
+}
+
+% Project / app title line
+\newcommand{\resapp}[1]{%
+  \vspace{3pt}{\small\textbf{#1}}\par\vspace{0pt}%
+}
+
+% Tech stack — italic label, normal value
+\newcommand{\restech}[1]{%
+  {\small\textit{Tech: }#1}\par\vspace{1pt}%
+}
+
+% Bullet list — standard hyphen bullets, ATS-safe
+\newenvironment{resbullets}{%
+  \begin{itemize}[
+    leftmargin=1.4em,
+    itemsep=0pt,
+    parsep=0pt,
+    topsep=2pt,
+    label={-}
+  ]
+  \small
+}{%
+  \end{itemize}%
+}
+
+% ── SKILLS TABLE: single-column, no tabular ──────────────────────────────────
+% Each row is just bold label + colon + value on one line
+\newcommand{\skillrow}[2]{%
+  {\small\textbf{#1:} #2}\par\vspace{1pt}%
+}
+
+\pagestyle{empty}
+
+\begin{document}
+
+% ── HEADER ────────────────────────────────────────────────────────────────────
+\begin{center}
+  {\LARGE\textbf{Chirag Bhaiji}}\\[4pt]
+  {\small
+  +91-86052 01092 \,|\,
+  \href{mailto:chiragbhaiji@gmail.com}{chiragbhaiji@gmail.com} \,|\,
+  \href{https://linkedin.com/in/chiragbhaiji}{linkedin.com/in/chiragbhaiji} \,|\,
+  \href{https://github.com/chiragbhaiji}{github.com/chiragbhaiji}%
+  }
+\end{center}
+
+% ── SUMMARY ───────────────────────────────────────────────────────────────────
+\ressection{Summary}
+{\small Senior mobile engineer with over a decade of experience shipping production-grade React Native,
+Swift, and React.js applications across E-commerce, Healthcare, Blockchain, and SaaS. Proven track record
+leading mobile engineering teams, architecting scalable white-label mobile platforms, and delivering
+measurable performance and engagement improvements. Deep focus on clean architecture, CI/CD,
+AI-assisted development workflows, and code quality.}
+
+% ── TECHNICAL SKILLS ──────────────────────────────────────────────────────────
+\ressection{Technical Skills}
+\skillrow{Languages}{JavaScript (ES6+), TypeScript, Swift}
+\skillrow{Mobile and Web}{React Native, React.js, Redux, Redux Toolkit, Zustand, React Query, Reanimated, Web3.js, Lottie}
+\skillrow{Testing and CI/CD}{Jest, React Testing Library, XCTest, SonarQube, Fastlane, GitHub Actions, Firebase App Distribution}
+\skillrow{Monitoring and Analytics}{Sentry, BugSnag, Firebase Crashlytics, AppDynamics, Mixpanel, CleverTap, GrowthBook, UserExperior, Fullstory}
+\skillrow{Databases and APIs}{Realm, SQLite, Firebase (RTDB/Firestore), Salesforce SDK, REST API, Socket.io, Razorpay, Apple IAP, Apple Health}
+\skillrow{Tools}{Xcode, Android Studio, Flipper, Figma, VS Code, Cursor, Claude, ChatGPT}
+\skillrow{Practices}{Agile, Scrum, Code Review, AI-Assisted Development, App Store and Google Play Release Management}
+
+% ── EXPERIENCE ────────────────────────────────────────────────────────────────
+\ressection{Experience}
+
+% PwC ──────────────────────────────────────────────────────────────────────────
+\rescompany{PwC Acceleration Center}{Pune, India (Remote)}
+\resrole{Manager -- React Native}{Apr 2025 -- Feb 2026}
+\resapp{Savvy | Enterprise field-operations app for PepsiCo}
+\restech{React Native, TypeScript, Redux Toolkit, Salesforce SDK, AppDynamics, Fastlane, GitHub Actions, Cursor}
+\begin{resbullets}
+  \item Led the React Native team to ship 5 features within a cross-functional delivery structure.
+  \item Bridged offshore team, PwC leadership, and PepsiCo stakeholders, resolving blockers and keeping sprint delivery on track.
+  \item Resolved 10+ critical production issues to keep the app stable and clear the defect backlog.
+  \item Defined a reusable AI review prompt used team-wide, making AI the first pass on every PR and freeing engineers for higher-order feedback.
+  \item Used Cursor to debug a large legacy codebase with limited documentation, analyzing huge log files, cutting root cause identification time across production issues.
+  \item Created onboarding docs and developer guides to cut new React Native ramp-up time from 2+ weeks to approximately 1 week.
+\end{resbullets}
+
+% Thrive ───────────────────────────────────────────────────────────────────────
+\rescompany{Thrive Now (Hashtag Loyalty)}{Mumbai, India (Remote)}
+\resrole{Senior React Native Developer}{Feb 2024 -- Dec 2024}
+\resapp{Thrive | Food discovery and ordering app}
+\restech{React Native, TypeScript, Redux Toolkit, React Query, Reanimated, Sentry, Firebase, Cursor, GitHub Copilot, Claude, Notion AI}
+\begin{resbullets}
+  \item Designed and built Rewards, Customer Feedback, and Personalized Ratings end-to-end, driving a 30\% increase in user engagement.
+  \item Used Cursor, GitHub Copilot, and Claude daily, cutting root cause identification time in production issues by 50--60\%.
+  \item Used Notion AI to document app flows and write ticket descriptions, reducing clarification rounds and improving sprint clarity.
+  \item Replaced a third-party Carousel with a self created component using Reanimated, cutting RAM usage by 40--50\% and improving scroll performance.
+  \item Led a codebase-wide refactor that reduced technical debt by 20\%, improving maintainability, security, and code review speed.
+  \item Enabled Sentry to track performance and uploaded debug symbols to reduce stack trace resolution time from days to hours.
+\end{resbullets}
+
+% EPAM ─────────────────────────────────────────────────────────────────────────
+\rescompany{EPAM Systems}{Pune, India}
+\resrole{Lead Software Developer}{Jul 2023 -- Feb 2024}
+\resapp{Bloom - IQVIA | Patient-centric app for remote clinical trial participation}
+\restech{React Native, TypeScript, Redux Toolkit, React Query, Firebase, REST API, deep linking}
+\begin{resbullets}
+  \item Delivered the Surveys module - the app\textquotesingle{}s most business-critical feature - end-to-end within 5 days of joining, directly unblocking a stalled release milestone.
+  \item Diagnosed broken deep link flows for email verification and password reset, then built a generalized integration pattern that scales to all future features.
+  \item Built the Rewards feature and refactored a fragmented healthcare provider form into a single composable component supporting 4 distinct usage scenarios.
+\end{resbullets}
+
+% BigBinary ────────────────────────────────────────────────────────────────────
+\rescompany{BigBinary}{Pune, India (Remote)}
+\resrole{Software Engineer}{Jun 2021 -- Jul 2023}
+
+\resapp{Head On: Stress and Anxiety | Psychologist-designed emotional well-being app (iOS and Android)}
+\restech{React Native, TypeScript, Reanimated, Lottie, Apple IAP, Firebase, push notifications}
+\begin{resbullets}
+  \item Built the In-App Purchases flow and push notification system, enabling monetisation and re-engagement that improved daily active users and retention.
+  \item Built a reusable library of animated custom UI components with Reanimated and Lottie, powering the app\textquotesingle{}s micro-interaction experience across all core screens.
+\end{resbullets}
+
+\resapp{Turtle Method | Nutrition and mindset coaching app for fat loss and fitness (iOS and Android)}
+\restech{React Native, TypeScript, Apple Health, Fitbit API, Garmin API, Firebase}
+\begin{resbullets}
+  \item Automated 90\% of manual coach workflows - scheduling, tracking, and reporting - increasing client capacity per coach and driving platform adoption.
+  \item Integrated Apple Health, Fitbit, and Garmin APIs for automatic biometric syncing, eliminating manual data entry and enabling real-time progress tracking for coaches.
+\end{resbullets}
+
+\resapp{Neeto Suite | SaaS productivity apps - neetoInvoice, neetoCal, neetoDesk}
+\restech{React Native, TypeScript, neetoUI-RN, React Query, Redux Toolkit, Fastlane, Firebase App Distribution}
+\begin{resbullets}
+  \item Built 3 of 6 apps in the Neeto suite from the ground up; automated iOS and Android release pipelines via Fastlane, removing manual distribution steps.
+  \item Ran competitive analysis to surface feature gaps that were directly incorporated into the product roadmap.
+\end{resbullets}
+
+% Deqode ───────────────────────────────────────────────────────────────────────
+\rescompany{Deqode Solutions}{Indore, India}
+\resrole{Team Lead / Senior Solution Engineer}{Apr 2017 -- May 2021}
+
+\resapp{PumaPay | DeFi payment protocol for peer-to-peer transactions}
+\restech{Swift, React Native, Web3.js, Ethereum, Ruby, white-label architecture, REST API}
+\begin{resbullets}
+  \item Joined as sole founding engineer; shipped the first production version, then grew and led the engineering team from 0 to 15 engineers.
+  \item Rebuilt the legacy hybrid app from scratch in native Swift, then architected it as a white-label platform delivering full per-client customisation within a one-month window.
+  \item Wrote a Ruby script to automate per-client theme and feature generation, eliminating manual setup on each new wallet deployment.
+\end{resbullets}
+
+\resapp{Patientory | Decentralised health record app built on blockchain (iOS)}
+\restech{Swift, Hyperledger, IPFS, blockchain SDK, REST API}
+\begin{resbullets}
+  \item Designed and built a Swift SDK for Hyperledger blockchain interaction from scratch, forming the core integration layer between the app and the network.
+  \item Collaborated with the backend team to integrate IPFS, enabling distributed health record storage and removing the single point of failure of centralised file hosting.
+\end{resbullets}
+
+% Webonise ─────────────────────────────────────────────────────────────────────
+\rescompany{Webonise Lab (now Haptiq)}{Pune, India}
+\resrole{Software Developer}{Jun 2014 -- Mar 2017}
+\resapp{Red Hat Partner Connect | B2B matchmaking app for contract-based partnerships}
+\restech{React Native, JavaScript, Socket.io, REST API, OOP design patterns}
+\begin{resbullets}
+  \item Built a real-time partner chat feature using Socket.io, and refactored a screen with 20+ dynamic form fields using OOP patterns, reducing complexity and maintenance overhead.
+  \item Partnered with business analysts and clients to translate ambiguous requirements into scoped technical solutions, reducing rework from unclear specs.
+\end{resbullets}
+
+% ── EDUCATION ─────────────────────────────────────────────────────────────────
+\ressection{Education}
+\rescompany{RGPV University}{Madhya Pradesh, India}
+{\small\textit{Bachelor of Engineering in Computer Science}\hfill 2010 -- 2014}
+
+\end{document}
