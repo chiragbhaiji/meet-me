@@ -12,24 +12,24 @@ function parseDate(value: string | undefined): Date | undefined {
 }
 
 export function getTotalExperience(entries: ExperienceEntry[]): number {
-  if (!entries.length) return 12;
+  if (!entries.length) return 0;
 
   const now = new Date();
-  let earliest: Date | undefined;
-  let latest: Date | undefined;
+  let totalMonths = 0;
 
   for (const entry of entries) {
     const start = parseDate(entry.duration?.start);
     const end = parseDate(entry.duration?.end) ?? now;
     if (!start) continue;
-    if (!earliest || start < earliest) earliest = start;
-    if (!latest || end > latest) latest = end;
+
+    const months =
+      (end.getFullYear() - start.getFullYear()) * 12 +
+      (end.getMonth() - start.getMonth());
+    totalMonths += Math.max(0, months);
   }
 
-  if (!earliest) return 12;
+  if (!totalMonths) return 0;
 
-  const years =
-    ((latest?.getTime() ?? now.getTime()) - earliest.getTime()) /
-    (1000 * 60 * 60 * 24 * 365.25);
-  return Math.max(1, Math.round(years));
+  const years = Math.max(1, Math.round(totalMonths / 12));
+  return years;
 }

@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { data } from "./constants/data";
 import ThemeProvider from "./components/ThemeProvider";
+import { getTotalExperience } from "./utils/experience";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -10,8 +11,11 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   weight: ["400", "500", "600", "700"],
 });
 
-const description =
-  "React Native and Swift iOS engineer, 12 years across startups and enterprise.";
+const yearsOfExperience = data.experiences
+  ? getTotalExperience(data.experiences)
+  : 0;
+
+const description = `React Native and Swift iOS engineer, ${yearsOfExperience} years across startups and enterprise.`;
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://chiragbhaiji.github.io"),
