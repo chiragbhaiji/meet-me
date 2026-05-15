@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import Writing from "./components/Writing";
 import Footer from "./components/Footer";
 import { data } from "./constants/data";
 import NavBar from "./components/NavBar";
@@ -21,6 +22,7 @@ export default function Home() {
         <About description={data.description} />
         <Experience experiences={data.experiences} />
         <Projects projects={data.projects} />
+        <Writing writings={data.writings} />
         <Footer />
       </div>
     </div>

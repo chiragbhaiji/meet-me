@@ -19,9 +19,9 @@ export const data = {
     },
   ],
   description: [
-    "I'm a developer passionate about creating seamless, user-friendly applications that combine thoughtful design with robust engineering. I specialize in mobile development, building cross-platform apps with React Native and native iOS applications using Swift. I also have experience working with React for web app development, enabling me to deliver end-to-end solutions across platforms.",
-    "With over a decade of experience, I've worked across diverse environments, from start-ups to established organizations, leading teams, architecting scalable solutions, and managing clients to ensure their requirements are understood and delivered effectively. My ability to bridge the gap between technical and business needs has been key to delivering impactful, high-performance applications.",
-    "Outside of work, I enjoy listening to music, watching comedy shows, and traveling, drawing inspiration from new experiences and cultures to bring fresh perspectives to my work.",
+    "I specialize in mobile: building cross-platform apps with React Native and native iOS apps in Swift, with React for web when the project calls for it. I care about performance, UX detail, and getting it right: clean architecture, reliable CI/CD, and apps that actually behave in production.",
+    "I've worked across the full range of company stages, from founding engineer on PumaPay, a DeFi payment protocol where I grew the team from 0 to 15, to managing the React Native team at PwC on an enterprise field-operations app for PepsiCo. That range means I know how to operate in both startup mode and large-org structure.",
+    "Outside work I'm into music, comedy, and travel. New places and experiences tend to sharpen how I think about product problems: what actually matters to people versus what looks good in a spec.",
   ],
   experiences: [
     {
@@ -54,7 +54,7 @@ export const data = {
     {
       company: {
         name: "Thrive Now (Hashtag Loyalty)",
-        url: "https://thrivenow.in",
+        url: "",
       },
       role: "Senior React Native Developer",
       duration: {
@@ -177,10 +177,20 @@ export const data = {
       skillsUsed: ["iOS", "Swift", "Objective-C", "Socket.io", "OOP", "TDD"],
     },
   ],
+  writings: [
+    {
+      title: "Playing videos in React Native using Cloudinary",
+      url: "https://www.bigbinary.com/blog/playing-videos-in-react-native-using-cloudinary",
+      publishedOn: "BigBinary Blog",
+      date: "Sep 2021",
+      description:
+        "A practical guide to hosting, configuring, and streaming videos in React Native using Cloudinary, covering platform-specific fixes and adaptive bitrate streaming.",
+    },
+  ],
   projects: [
     {
       name: "Thrive: Online Food Delivery",
-      url: "https://thrivenow.in",
+      url: "",
       description: [
         "Food discovery and ordering app with a social platform for foodies.",
         "Built Rewards, Customer Feedback, and Personalized Ratings end-to-end, driving a 30% increase in user engagement.",
@@ -295,7 +305,7 @@ export const data = {
     },
     {
       name: "PumaPay: DeFi Payment Wallet",
-      url: "https://pumapay.com",
+      url: "",
       description: [
         "DeFi payment protocol for peer-to-peer transactions via advanced billing models.",
         "Joined as sole founding engineer, shipped the first production version, then grew the engineering team from 0 to 15.",

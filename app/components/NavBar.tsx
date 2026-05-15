@@ -13,7 +13,7 @@ type NavBarProps = {
   resumeUrl: string;
 };
 
-const SECTION_IDS = ["about", "experience", "projects"] as const;
+const SECTION_IDS = ["about", "experience", "projects", "writing"] as const;
 const SCROLL_STUCK_THRESHOLD = 10;
 const NAVBAR_HEIGHT_PX = 70;
 
@@ -89,7 +89,7 @@ export default function NavBar({
   }, [sectionLabel]);
 
   return (
-    <div className="top-0 z-50 sticky backdrop-blur-3xl py-4 transition-all duration-200">
+    <div className={`top-0 z-50 sticky backdrop-blur-3xl py-4 transition-all duration-200 ${isStuck ? "border-b border-gray-200/60 dark:border-white/10 shadow-sm" : ""}`}>
       <div
         ref={containerRef}
         className="relative flex justify-between items-center gap-4 mx-auto px-6 max-w-6xl"
@@ -122,7 +122,7 @@ export default function NavBar({
             className="flex items-center justify-center bg-gray-200 hover:bg-gray-300 dark:bg-gray-500/20 dark:hover:bg-gray-500/60 p-2 rounded-lg text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
             aria-label="Toggle theme"
           >
-            {theme === "dark" ? <FaSun size={24} /> : <FaMoon size={24} />}
+            {theme === "dark" ? <FaSun size={20} /> : <FaMoon size={20} />}
           </button>
           <button
             onClick={() => window.open(resumeUrl, "_self")}

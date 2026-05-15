@@ -5,11 +5,8 @@ export default function Footer() {
 
   return (
     <div className="flex flex-col items-center gap-2">
-      <div className="text-gray-500 font-semibold text-center">
-        Built with Next.js, TypeScript, Tailwind & Deployed on GitHub Pages 🚀
-      </div>
-      <div className="text-gray-500 text-sm font-medium">
-        © {currentYear} All rights reserved.
+      <div className="text-gray-400 dark:text-gray-500 text-sm text-center">
+        © {currentYear} Chirag Bhaiji
       </div>
     </div>
   );

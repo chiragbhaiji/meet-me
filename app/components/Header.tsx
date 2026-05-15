@@ -18,7 +18,7 @@ export default function Header({
       <h1 className="font-bold text-3xl text-gray-800 dark:text-gray-200 md:text-6xl uppercase tracking-widest">
         {fullName}
       </h1>
-      <h3 className="font-semibold text-gray-600 dark:text-gray-300 text-l md:text-2xl uppercase tracking-widest">
+      <h3 className="font-normal text-gray-500 dark:text-gray-400 text-lg md:text-xl tracking-wide">
         {currentRole}
       </h3>
       <SectionBody text={shortBio} />
